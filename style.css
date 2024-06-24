@@ -1,0 +1,86 @@
+/* Remove margens e define uma fonte padrão para todo o corpo da página */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estiliza a barra de navegação */
+nav {
+    background-color: #556B2F;
+    /* Define a cor de fundo */
+    overflow: hidden;
+    /* Garante que o conteúdo não transborde */
+    position: fixed;
+    /* Fixa a barra de navegação no topo da página */
+    width: 100%;
+    /* Define a largura da barra de navegação para ocupar 100% da largura da página */
+    top: 0;
+    /* Posiciona a barra de navegação no topo da página */
+    z-index: 1000;
+    /* Garante que a barra de navegação fique sobre outros elementos */
+    height: 100px;
+    /* Permite altura automática */
+    display: flex;
+    /* Usa flexbox para organizar o conteúdo */
+    justify-content: space-between;
+    /* Espaça os itens igualmente */
+    align-items: center;
+    /* Alinha os itens no centro verticalmente */
+    padding: 0 20px;
+    /* Adiciona padding nas laterais */
+}
+
+/* Estiliza o logotipo na barra de navegação */
+nav .logo {
+    color: #fff;
+    /* Define a cor do texto */
+    display: block;
+    /* Exibe como um bloco */
+    padding: 14px 16px;
+    /* Adiciona padding ao redor do logotipo */
+}
+
+
+/* Estiliza as seções da página */
+section {
+    padding: 80px 20px;
+    /* Adiciona padding para compensar a altura da barra de navegação fixa */
+    background-color: white;
+    /* Define a cor de fundo */
+    margin: 60px 0 20px;
+    /* Adiciona margens */
+}
+
+/* Estiliza os cabeçalhos da página */
+h1 {
+    color: #333;
+    /* Define a cor do texto */
+}
+
+
+
+
+
+/* Contêiner da barra de pesquisa */
+nav .search-container {
+    flex-grow: 1;
+    /* Permite que o contêiner cresça para ocupar espaço disponível */
+    display: flex;
+    justify-content: center;
+    /* Centraliza a barra de pesquisa */
+}
+
+/* Estilo do input da barra de pesquisa */
+nav .search-container input[type="text"] {
+    width: 700px;
+    /* Define a largura da barra de pesquisa */
+    padding: 8px;
+    /* Adiciona padding ao input */
+    border: 1px solid #ccc;
+    /* Define a borda do input */
+    border-radius: 4px;
+    /* Adiciona bordas arredondadas */
+}
+
+
