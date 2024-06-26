@@ -3,11 +3,20 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    background-image:url(../IMG/ai-generated-8266786_1920.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    
 }
+
+
 
 /* Estiliza a barra de navegação */
 nav {
-    background-color: #556B2F;
+    background-color:#556b2fe8;
     /* Define a cor de fundo */
     overflow: hidden;
     /* Garante que o conteúdo não transborde */
@@ -83,4 +92,35 @@ nav .search-container input[type="text"] {
     /* Adiciona bordas arredondadas */
 }
 
+
+nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sub-menu-1{
+    display: none;
+    
+
+
+}
+
+nav ul li:hover .sub-menu-1{
+    display: block;
+    position:center;
+    background-color: #333;
+    margin-top: 15px;
+    margin-left: -38px;
+}
 
